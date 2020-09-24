@@ -9,3 +9,8 @@ The .csv file is for easier handling in julia.
 
 
 The Bachelorabreit.jl file:
+
+1. RKI-ODE-model
+2. Parameter and initial condition sensitivity (parametersample, initsample, odesample, DataQuantile, sensitivityplot)
+3. SEIR-model and cumulative case numbers (RKI_COVID19.csv)
+4. Random Walk Metroplois Algorithm for adjusted SEIR-parameters (myRWM, θtransform, πp; Autocorrelation, Traceplot, Sample distribution, Correlation)
