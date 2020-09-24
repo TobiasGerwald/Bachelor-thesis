@@ -140,7 +140,7 @@ function test(testlength,parms,init)
 
 end
 
-##test
+
 test(100000,RKI_parms,RKI_init)
 
 #Teste rechnerisch, ob Intervalle richtig abgebildet werden
@@ -148,7 +148,7 @@ Diagonal(0.05 * RKI_parms) * (ones(15) * [-1 0 1] ) + [RKI_parms RKI_parms RKI_p
 "
 Die Abweichung liegt außerhalb der Maschienengenauigkeit und ergibt sich eigentlich ebenfalls zu 0.
 "
-## test end
+## Test end
 
 "
 parameter/initial condition sensitivity:
