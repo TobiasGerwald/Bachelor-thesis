@@ -461,14 +461,12 @@ end
 
 
 "Initial value for RWM"
-θ₀ = [-0.9, 0, 0, 0] #initial parameters
+θ₀ = [-0.9, 0, 0, 0] #normalized initial parameters
 
 
 mysample = myRWM(100000, θ₀, πp, Σ)
 mytransformedsample = θtransform(mysample.θ')'
-using JLD2
-@save "Bachelorarbeit.jld2" mytransformedsample
-@load "Bachelorarbeit.jld2" mytransformedsample
+
 
 mean(mysample.α)
 
